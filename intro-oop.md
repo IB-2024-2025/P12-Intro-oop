@@ -4,10 +4,7 @@
 
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
-* Sea capaz de resolver problemas sencillos en C++ usando todos los conocimientos adquiridos hasta ahora,
-  y en particular utilizando funciones y ficheros de texto
-* Diseñe, desarrolle y utilice funciones en sus programas haciendo que sus programas sean modulares
-* Configure y practique el uso de Visual Studio Code (VSC) para editar ficheros de forma remota en su VM
+* Desarrolle programas sencillos en C++ utilizando clases, así como todas las características del lenguaje estudiadas anteriormente
 
 ### Rúbrica de evaluacion de esta práctica
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva) que se tendrán en cuenta a la hora de evaluar esta práctica.
