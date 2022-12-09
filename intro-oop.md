@@ -70,4 +70,92 @@ Alternativamente podría también usarse `cmake` con un fichero `CMakeLists`, si
 * Cada función deberá realizar una única tarea y hacerlo correctamente
 * El identificador de una función debe reflejar claramente la finalidad de la función
 
-1. 
+1. Desarrolle una clase `Point2D` para representar puntos en el espacio bidimensional a través de sus
+coordenadas. 
+Incluya al menos los siguientes métodos:
+* *Show()* para mostrar en pantalla las coordenadas del punto
+* *Move* para cambiar las coordenadas del punto
+* *Distance* para calcular la 
+[distancia](https://www.mathwarehouse.com/algebra/distance_formula/index.php)
+entre dos puntos
+* *Middle* para calcular el 
+[punto medio](https://en.wikipedia.org/wiki/Midpoint)
+del segmento que une dos puntos
+
+2. Diseñe una clase `Circulo` que permita representar círculos utilizando como atributos el centro,
+el radio y el color del círculo.
+Utilice una
+[enumeración](https://www.learncpp.com/cpp-tutorial/unscoped-enumerations/)
+(`enum`) para representar el color del círculo.
+Incluya métodos *Area*, *Perimetro* y *Print* que permitan respectivamente calcular el área, el perímetro del
+círculo así como imprimir en pantalla la información relativa al círculo en cuestión.
+Incluya asimimsmo un método *EsInterior* que determine si un punto del espacio cartesiano `(x, y)` está o no
+dentro del círculo.
+
+3. La clase `Complejo`.
+
+Todo
+[número complejo](https://es.wikipedia.org/wiki/N%C3%BAmero_complejo)
+puede representarse como la suma de un número real y un número imaginario, de la forma `a + bi` donde el
+término `a` es la parte real, `b` la parte imaginaria e `i` la
+[unidad imaginaria](https://es.wikipedia.org/wiki/Unidad_imaginaria).
+
+En este ejercicio se propone desarrollar una clase `Complejo` que permita representar y operar con números complejos.
+
+Separe el diseño de su clase `Complejo` en dos ficheros, `complejo.h` y `complejo.cc` conteniendo
+respectivamente la declaración y la definición de la clase.
+Siga las indicaciones del tutorial 
+[Class code and header files](https://www.learncpp.com/cpp-tutorial/89-class-code-and-header-files/)
+para realizar esta separación de su clase en dos ficheros.
+Siga igualmente las indicaciones del tutorial 
+[Header guards](https://www.learncpp.com/cpp-tutorial/header-guards/)
+para incluir *header guards* (guardas de cabecera) en sus ficheros de
+definiciones (`*.h`) de modo que se evite la inclusión múltiple del mismo fichero.
+
+Desarrolle un programa cliente `complejos.cc` que permita operar con números complejos y haga uso de la clase `Complejo` que diseñe.
+La clase `Complejo` ha de contener al menos métodos que implementen la sobrecarga de los operadores de suma y
+resta de números complejos así como de los operadores de inserción y extracción en flujos (*streams*).
+Así la función `main` del programa `complejos.cc` podría contener (entre otras) sentencias como las siguientes:
+
+```
+main() {
+  Complejo complejo1{4, 5}, complejo2{7, -8};
+  Complejo resultado;
+  resultado = complejo1 + complejo2;
+  std::cout << resultado;
+  resultado = complejo1 - complejo2;
+  std::cout << resultado;
+}
+```
+Incluya (discrecionalmente) cualesquiera otras operaciones que considere adecuadas como métodos en la clase `Complejo`.
+
+4. Utilice su clase `Complejo` del ejercicio anterior para resolver el ejercicio
+[Complex Numbers](https://exercism.org/tracks/cpp/exercises/complex-numbers)
+de Exercism. 
+En Exercism el nombre de la clase ha de ser *Complex*.
+Es posible que tenga que realizar alguna otra modificación sobre su implementación de la 
+clase *Complejo*.
+Estudie el fichero `complex_numbers_test.cpp` que contiene los tests de ese problema en Exercism.
+
+5. La clase Fecha.
+
+Desarrolle una clase `Fecha` que permita representar y gestionar fechas.
+Incorpore en la clase los miembros de datos y métodos que considere adecuados para la finalidad que se
+persigue en este ejercicio.
+Incluya un método que permita determinar si el año correspondiente a una fecha es un año bisiesto o
+no.
+Resuelva el problema 
+[Valid Dates](https://jutge.org/problems/P58459_en)
+de Jutge y súbalo a la plataforma para su evaluación.
+A partir de la solución de ese problema haga que el constructor de la clase `Fecha` solo admita una fecha si
+es válida.
+
+Realice un programa cliente `fechas.cc` que tome como parámetro una fecha, un número y un nombre de fichero:
+```
+./fechas - Gestión de fechas
+Modo de uso: ./fechas dd/mm/aa N fichero_salida.txt
+Pruebe ./fechas --help para más información
+```
+El programa deberá imprimir en el fichero de salida (tercer parámetro) las N (segundo parámetro) fechas cronológicamente posteriores a la
+introducida (primer parámetro) con una separación de un día entre fechas sucesivas.
+
