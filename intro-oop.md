@@ -259,12 +259,5 @@ de Jutge y súbalo a la plataforma para su evaluación.
 A partir de la solución de ese problema haga que el constructor de la clase `Fecha` solo admita una fecha si
 es válida.
 
-Realice un programa cliente `fechas.cc` que tome como parámetro una fecha, un número y un nombre de fichero:
-```
-./fechas - Gestión de fechas
-Modo de uso: ./fechas dd/mm/aa N fichero_salida.txt
-Pruebe ./fechas --help para más información
-```
-El programa deberá imprimir en el fichero de salida (tercer parámetro) las N (segundo parámetro) fechas cronológicamente posteriores a la
-introducida (primer parámetro) con una separación de un día entre fechas sucesivas.
-
+Realice un programa cliente `fechas.cc` que permita declarar, leer y escribir (pantalla, teclado o ficheros)
+objetos fecha.
