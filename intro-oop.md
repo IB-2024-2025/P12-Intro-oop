@@ -37,21 +37,23 @@ para su evaluación
 * Ha realizado todos sus ejercicios en la máquina virtual Ubuntu de la asignatura.
 * Demuestra que es capaz de ejecutar comandos Linux en su VM
 
-#### Visual Studio Code
+### Introducción a la depuración
+  
 
 ### Material de estudio complementario
-Además de los contenidos revisados en las
-[Transparencias de clase](https://docs.google.com/presentation/d/1k2IyoAsmd60a6EzP96eLuhgISdf9e35nPRPIBb92a3E/edit?usp=sharing)
-correspondientes al tema de Entrada/Salida así como los
-[Ejemplos de código](https://github.com/IB-2022-2023/IB-class-code-examples/tree/master/Functions)
-correspondientes a ese material,
+Comience por estudiar el material contenido en las transparencias
+[Debugging your source code](https://docs.google.com/presentation/d/1-vU5UF1ruhHWMp-lJsoYsq8s8B9ZvJvBsdDUu4wVgDU/edit?usp=sharing)
+que puede encontrar en el aula virtual de la asignatura.
+
+
 estudie del
 [tutorial de referencia](https://www.learncpp.com/)
 en la asignatura los siguientes apartados:
-* [23.1 Input and output (I/O) streams](https://www.learncpp.com/cpp-tutorial/input-and-output-io-streams/)
-* [23.2 Input with istream](https://www.learncpp.com/cpp-tutorial/input-with-istream/)
-* [23.3 Output with ostream and ios](https://www.learncpp.com/cpp-tutorial/output-with-ostream-and-ios/)
-* [23.6 Basic file I/O](https://www.learncpp.com/cpp-tutorial/basic-file-io/)
+* 
+
+La introducción a la depuración que figura en este enunciado ha sido extraído de la lección
+[Debugging Techniques](https://www.cs.cornell.edu/courses/cs312/2006fa/lectures/lec26.html)
+de la universidad de Cornell.
 
 ### Ejercicios
 * Al realizar los ejercicios cree dentro de su repositorio de esta práctica un directorio diferente
