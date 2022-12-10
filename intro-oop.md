@@ -38,18 +38,115 @@ para su evaluación
 * Demuestra que es capaz de ejecutar comandos Linux en su VM
 
 ### Introducción a la depuración
-  
+Probar un programa con un conjunto bien elegido de pruebas de entrada da a la programadora la seguridad 
+de que el programa es correcto. 
+Durante el proceso de prueba, el programador observa las relaciones entrada-salida, es decir, la salida 
+que produce el programa para cada caso de prueba de entrada. 
+Si el programa produce la salida esperada y obedece la especificación para cada caso de prueba, entonces 
+el programa se ha probado con éxito.
+
+Pero si la salida de uno de los casos de prueba no es la esperada, entonces el programa es incorrecto: 
+contiene errores (o defectos, o "bugs"). 
+En tales situaciones, las pruebas sólo revelan la presencia de errores, pero no indican cuáles son ni cómo 
+hay que corregir el código. 
+En otras palabras, las pruebas revelan los efectos (o síntomas) de los errores, no su causa. 
+La programadora debe entonces pasar por un proceso de depuración, para identificar las causas y solucionar los errores.
+
+Tal vez le resulte sorprendete saber que el proceso de depuración consume habitualmente más tiempo que la escritura del código. 
+La mayor parte del tiempo de desarrollo de una aplicación se dedica a depurar y mantener el código, más que a escribirlo.
+
+Es por ello que lo mejor es evitar el fallo al escribir el programa. 
+Es importante sentarse y pensar antes de codificar: decidir exactamente qué se necesita conseguir, cómo se planea conseguirlo, 
+diseñar el algoritmo de alto nivel de forma limpia, convencerse de que es correcto y decidir cuáles son las estructuras de datos 
+concretas que se planea utilizar. 
+Todo el esfuerzo invertido en diseñar y pensar el código antes de escribirlo valdrá la pena más adelante. 
+Las ventajas son dobles. 
+Primero, tener un diseño limpio reducirá la probabilidad de defectos del programa. 
+En segundo lugar, incluso si un error aparece durante las pruebas, un diseño limpio 
+hará que sea mucho más fácil de rastrear y corregir el error.
+
+Puede ser muy tentador escribir el programa lo más rápido posible, dejando poco o ningún tiempo para pensar en ello antes. 
+La programadora estará contenta de ver el programa funcionando en poco tiempo. 
+Pero es probable que se frustre poco después: sin una buena reflexión, el programa será complejo y poco claro, 
+por lo que el mantenimiento y la corrección de errores se convertirán en un proceso interminable.
+
+Una vez que el programador empieza a codificar, debe utilizar la programación defensiva. 
+Esto es similar a la conducción defensiva, que significa conducir en los peores escenarios 
+(por ejemplo, otros conductores que violan las leyes de tráfico, acontecimientos u obstáculos inesperados, etc.). 
+Del mismo modo, programar a la defensiva significa desarrollar código de forma que funcione correctamente en 
+los peores escenarios de su entorno. 
+Por ejemplo, al escribir una función, hay que suponer las entradas del peor caso para esa función, es decir, 
+entradas demasiado grandes, demasiado pequeñas o entradas que violen alguna propiedad, condición o invariante; 
+el código debe tratar estos casos, aunque el programador no espere que ocurran en circunstancias normales.
+
+Recuerde que el objetivo no es convertirse en un experto en la corrección de errores, 
+sino mejorar en la escritura de programas robustos y (mayoritariamente) libres de errores. 
+Como cuestión de actitud, los programadores no deben sentirse orgullosos cuando arreglan errores, 
+sino más bien avergonzados de que su código tenga errores. 
+Si hay un fallo en el programa, es sólo porque la programadora cometió errores.
+
+Existen varias aproximaciones para la depuración de programas simples.
+Puede revisar esas diferentes opciones en las transparencias de clase
+[Debugging your source code](https://docs.google.com/presentation/d/1-vU5UF1ruhHWMp-lJsoYsq8s8B9ZvJvBsdDUu4wVgDU/edit?usp=sharing)
+pero es indudable que utilizar un depurador es la mejor opción en cuanto el programa que se pretende depurar
+tiene una cierta entidad.
+
+La depuración es una de las tareas más importantes a la hora de programar. 
+Saber cómo utilizar un depurador para establecer puntos de interrupción, cómo pasar por encima y entrar en las funciones 
+que se están utilizando ahorra horas de desarrollo. 
+La depuración no sólo ahorra un valioso tiempo de desarrollo, sino que también ayuda a comprender mejor la lógica del código 
+y el sistema de flujo, que no es el objetivo principal de la depuración, pero es un gran efecto adicional.
+
+Se reproducen a continuación algunos consejos extraídos del 
+[tutorial de referencia](https://www.learncpp.com/cpp-tutorial/finding-issues-before-they-become-problems/)
+de la asignatura, orientados a evitar los errores de programación.
+Se trata de una lista incompleta pero que puede ser de gran valor:
+* Siga siempre las *Buenas prácticas* de programación
+* No deje que sus funciones sean demasiado largas
+* Comente razonablemente su código
+* Simplifique los programas
+* No programe cuando estés cansada
+* Entenda dónde están las trampas comunes en un lenguaje (todo lo que se le advierte no hacer)
+* Siempre que sea posible, prefiera utilizar la biblioteca estándar a escribir su propio código
+
+A modo de resumen diremos que **todo el tiempo que dedique a aprender a usar un depurador será tiempo que
+ganará en el futuro como profesional**.
+
+### Depuración con Visual Studio Code
+Una de las grandes ventajas de utilizar un entorno integrado de desarrollo como VSC es que integra un
+depurador avanzado. 
+En *Informática Básica* se propone utilizar el depurador 
+[gdb](https://www.sourceware.org/gdb/)
+a través de su interfaz de Visual Studio Code.
+
+Para aprender a utilizar el depurador en VSC comience por visualizar y seguir las instrucciones que se
+presentan en el vídeo
+[Depuración con VSC y GDG](https://www.youtube.com/watch?v=MZK9U8GOaao)
+que puede encontrar en el Aula Virtual de *Informática Básica*.
+El el directorio principal de esta práctica hallará el fichero `fibonacci_sum.tar.gz` que contiene el código
+que se utiliza en el vídeo.
+Se trata de un código que ya se ha utilizado en una práctica anterior.
+
+A continuación visualice y siga igualmente las instrucciones del vídeo también disponible en el aula virtual
+[Depuración de un proyecto C++](https://www.youtube.com/watch?v=O1GhRC3ECWo)
+que muestra como compilar, ejecutar y depurar un programa estructurado en varios ficheros.
+Los ficheros que se utilizan en ese vídeo están disponibles en el directorio `debug-VSC-multiple-files/` de
+esta práctica.
+
+Como ejercicio, trate a continuación de utilizar el depurador para encontrar el error del programa `debug.cc`
+que encontrará en el directorio de esta práctica.
+
+A partir de este punto se propone que utilice *siempre* el depurador para identificar errores en todos los
+programas que desarrolle.
 
 ### Material de estudio complementario
 Comience por estudiar el material contenido en las transparencias
 [Debugging your source code](https://docs.google.com/presentation/d/1-vU5UF1ruhHWMp-lJsoYsq8s8B9ZvJvBsdDUu4wVgDU/edit?usp=sharing)
 que puede encontrar en el aula virtual de la asignatura.
 
-
-estudie del
+Estudie del
 [tutorial de referencia](https://www.learncpp.com/)
-en la asignatura los siguientes apartados:
-* 
+en la asignatura todos los apartados del capítulo 3 (teniendo en cuenta las especificidades de VSC).
 
 La introducción a la depuración que figura en este enunciado ha sido extraído de la lección
 [Debugging Techniques](https://www.cs.cornell.edu/courses/cs312/2006fa/lectures/lec26.html)
