@@ -105,11 +105,13 @@ Se trata de una lista incompleta pero que puede ser de gran valor:
 * No deje que sus funciones sean demasiado largas
 * Comente razonablemente su código
 * Simplifique los programas
-* No programe cuando estés cansada
-* Entenda dónde están las trampas comunes en un lenguaje (todo lo que se le advierte no hacer)
-* Siempre que sea posible, prefiera utilizar la biblioteca estándar a escribir su propio código
+* Siempre que sea posible, prefiera utilizar la biblioteca estándar (STL) a escribir su propio código. 
+En particular en *Informática Básica*, utilice `std::vector`/`std::array` o `std::string` en lugar de arrays o cadenas 
+"al estilo de C"
+* No programe cuando esté cansada
+* Entienda dónde están las trampas comunes en un lenguaje (todo lo que se le advierte no hacer)
 
-A modo de resumen diremos que **todo el tiempo que dedique a aprender a usar un depurador será tiempo que
+A modo de conclusión diremos que **todo el tiempo que dedique a aprender a usar un depurador será tiempo que
 ganará en el futuro como profesional**.
 
 ### Depuración con Visual Studio Code
