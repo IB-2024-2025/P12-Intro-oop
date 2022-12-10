@@ -122,18 +122,19 @@ En *Informática Básica* se propone utilizar el depurador
 a través de su interfaz de Visual Studio Code.
 
 Para aprender a utilizar el depurador en VSC comience por seguir las instrucciones de la página
-[Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux#_debug-helloworldcpp)
+[Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux)
 de la documentación oficial de VSC.
-En esa página se indica cómo editar, compilar, ejecutar y depurar el fichero 
+En esa página se indica cómo editar, compilar, ejecutar y depurar el fichero `hello_world_debug.cc` que tiene
+disponible en el directorio de esta práctica.
+Preste particular atención al apartado
+[Debug helloworld.cc](https://code.visualstudio.com/docs/cpp/config-linux#_debug-helloworldcpp)
+en el que se explican los comandos básicos de depuración.
 
-
-Para aprender a utilizar el depurador en VSC comience por visualizar y seguir las instrucciones que se
-presentan en el vídeo
+A continuación, visualice y siga las instrucciones que se presentan en el vídeo
 [Depuración con VSC y GDG](https://www.youtube.com/watch?v=MZK9U8GOaao)
 que puede encontrar en el Aula Virtual de *Informática Básica*.
 El el directorio principal de esta práctica hallará el fichero `fibonacci_sum.tar.gz` que contiene el código
-que se utiliza en el vídeo.
-Se trata de un código que ya se ha utilizado en una práctica anterior.
+que se utiliza en el vídeo y que ya ha estudiado en una práctica anterior.
 
 A continuación visualice y siga igualmente las instrucciones del vídeo también disponible en el aula virtual
 [Depuración de un proyecto C++](https://www.youtube.com/watch?v=O1GhRC3ECWo)
