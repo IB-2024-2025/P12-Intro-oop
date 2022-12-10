@@ -121,6 +121,12 @@ En *Informática Básica* se propone utilizar el depurador
 [gdb](https://www.sourceware.org/gdb/)
 a través de su interfaz de Visual Studio Code.
 
+Para aprender a utilizar el depurador en VSC comience por seguir las instrucciones de la página
+[Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux#_debug-helloworldcpp)
+de la documentación oficial de VSC.
+En esa página se indica cómo editar, compilar, ejecutar y depurar el fichero 
+
+
 Para aprender a utilizar el depurador en VSC comience por visualizar y seguir las instrucciones que se
 presentan en el vídeo
 [Depuración con VSC y GDG](https://www.youtube.com/watch?v=MZK9U8GOaao)
