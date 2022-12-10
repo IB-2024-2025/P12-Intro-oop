@@ -121,9 +121,13 @@ En *Informática Básica* se propone utilizar el depurador
 [gdb](https://www.sourceware.org/gdb/)
 a través de su interfaz de Visual Studio Code.
 
+Si no lo ha hecho así, en *Informática Básica* se le recomienda que al instalar Visual Studio Code mantenga el
+programa en su versión en inglés (se puede personalizar para español) porque de ese modo podrá seguir mejor
+los diferentes tutoriales en inglés sobre el programa.
+
 Para aprender a utilizar el depurador en VSC comience por seguir las instrucciones de la página
 [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux)
-de la documentación oficial de VSC.
+de la documentación oficial.
 En esa página se indica cómo editar, compilar, ejecutar y depurar el fichero `hello_world_debug.cc` que tiene
 disponible en el directorio de esta práctica.
 Preste particular atención al apartado
