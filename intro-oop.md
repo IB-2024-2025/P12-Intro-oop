@@ -4,7 +4,7 @@
 
 ### Objetivos
 Los objetivos de esta práctica son que el alumnado:
-* Desarrolle programas sencillos en C++ utilizando clases, así como todas las características del lenguaje estudiadas anteriormente
+* Desarrolle programas sencillos en C++ utilizando programación orientada a objetos, así como todas las características del lenguaje estudiadas anteriormente
 
 ### Rúbrica de evaluacion de esta práctica
 Se señalan a continuación los aspectos más relevantes (la lista no es exhaustiva) que se tendrán en cuenta a la hora de evaluar esta práctica.
@@ -46,11 +46,11 @@ Si el programa produce la salida esperada y obedece la especificación para cada
 el programa se ha probado con éxito.
 
 Pero si la salida de uno de los casos de prueba no es la esperada, entonces el programa es incorrecto: 
-contiene errores (o defectos, o "bugs"). 
+contiene errores (también conocidos como "*bugs*"). 
 En tales situaciones, las pruebas sólo revelan la presencia de errores, pero no indican cuáles son ni cómo 
 hay que corregir el código. 
 En otras palabras, las pruebas revelan los efectos (o síntomas) de los errores, no su causa. 
-La programadora debe entonces pasar por un proceso de depuración, para identificar las causas y solucionar los errores.
+La programadora debe entonces acometer un proceso de depuración, para identificar las causas y solucionar los errores.
 
 Tal vez le resulte sorprendete saber que el proceso de depuración consume habitualmente más tiempo que la escritura del código. 
 La mayor parte del tiempo de desarrollo de una aplicación se dedica a depurar y mantener el código, más que a escribirlo.
@@ -70,8 +70,8 @@ La programadora estará contenta de ver el programa funcionando en poco tiempo.
 Pero es probable que se frustre poco después: sin una buena reflexión, el programa será complejo y poco claro, 
 por lo que el mantenimiento y la corrección de errores se convertirán en un proceso interminable.
 
-Una vez que el programador empieza a codificar, debe utilizar la programación defensiva. 
-Esto es similar a la conducción defensiva, que significa conducir en los peores escenarios 
+Una vez que el programador empieza a codificar, debe utilizar una programación defensiva. 
+Esto es similar a la conducción defensiva, que significa conducir evitando los escenarios adversos
 (por ejemplo, otros conductores que violan las leyes de tráfico, acontecimientos u obstáculos inesperados, etc.). 
 Del mismo modo, programar a la defensiva significa desarrollar código de forma que funcione correctamente en 
 los peores escenarios de su entorno. 
@@ -82,8 +82,8 @@ el código debe tratar estos casos, aunque el programador no espere que ocurran 
 Recuerde que el objetivo no es convertirse en un experto en la corrección de errores, 
 sino mejorar en la escritura de programas robustos y (mayoritariamente) libres de errores. 
 Como cuestión de actitud, los programadores no deben sentirse orgullosos cuando arreglan errores, 
-sino más bien avergonzados de que su código tenga errores. 
-Si hay un fallo en el programa, es sólo porque la programadora cometió errores.
+sino más bien avergonzados de que su código contenga errores. 
+Si hay un fallo en un programa, es sólo porque su autor cometió errores.
 
 Existen varias aproximaciones para la depuración de programas simples.
 Puede revisar esas diferentes opciones en las transparencias de clase
@@ -95,15 +95,16 @@ La depuración es una de las tareas más importantes a la hora de programar.
 Saber cómo utilizar un depurador para establecer puntos de interrupción, cómo pasar por encima y entrar en las funciones 
 que se están utilizando ahorra horas de desarrollo. 
 La depuración no sólo ahorra un valioso tiempo de desarrollo, sino que también ayuda a comprender mejor la lógica del código 
-y el sistema de flujo, que no es el objetivo principal de la depuración, pero es un gran efecto adicional.
+y el flujo de su ejecución, que no es el objetivo principal de la depuración, pero es un gran efecto adicional.
 
 Se reproducen a continuación algunos consejos extraídos del 
 [tutorial de referencia](https://www.learncpp.com/cpp-tutorial/finding-issues-before-they-become-problems/)
 de la asignatura, orientados a evitar los errores de programación.
 Se trata de una lista incompleta pero que puede ser de gran valor:
 * Siga siempre las *Buenas prácticas* de programación
-* No deje que sus funciones sean demasiado largas
-* Comente razonablemente su código
+Todas esas prácticas están pensadas para minimizar el número de potenciales errores.
+* No deje que sus funciones sean demasiado largas (aproximadamente las líneas que caben en una pantalla, a lo sumo)
+* Comente razonablemente su código allí donde sea pertinente
 * Simplifique los programas
 * Siempre que sea posible, prefiera utilizar la biblioteca estándar (STL) a escribir su propio código. 
 En particular en *Informática Básica*, utilice `std::vector`/`std::array` o `std::string` en lugar de arrays o cadenas 
