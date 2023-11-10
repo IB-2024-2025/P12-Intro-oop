@@ -1,4 +1,4 @@
-# Práctica 11. Introducción a la Programación Orientada a Objetos. Depuración.
+# Práctica 12. Introducción a la Programación Orientada a Objetos. Depuración.
 
 # Factor de ponderación: 10
 
