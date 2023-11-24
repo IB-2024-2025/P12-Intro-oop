@@ -101,7 +101,9 @@ Se reproducen a continuación algunos consejos extraídos del
 [tutorial de referencia](https://www.learncpp.com/cpp-tutorial/finding-issues-before-they-become-problems/)
 de la asignatura, orientados a evitar los errores de programación.
 Se trata de una lista incompleta pero que puede ser de gran valor:
-* Siga siempre las *Buenas prácticas* de programación
+* Siga siempre las
+[*Buenas prácticas*](https://docs.google.com/presentation/d/1pj0YVWwOhWI0CGj2wjsHAebnFxfVtowRcFTOdBiloSc/edit?usp=sharing)
+de programación.
 Todas esas prácticas están pensadas para minimizar el número de potenciales errores.
 * No deje que sus funciones sean demasiado largas (aproximadamente las líneas que caben en una pantalla, a lo sumo)
 * Comente razonablemente su código allí donde sea pertinente
