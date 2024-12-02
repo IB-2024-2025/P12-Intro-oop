@@ -85,12 +85,6 @@ Como cuestión de actitud, los programadores no deben sentirse orgullosos cuando
 sino más bien avergonzados de que su código contenga errores. 
 Si hay un fallo en un programa, es sólo porque su autor cometió errores.
 
-Existen varias aproximaciones para la depuración de programas simples.
-Puede revisar esas diferentes opciones en las transparencias de clase
-[Debugging your source code](https://docs.google.com/presentation/d/1-vU5UF1ruhHWMp-lJsoYsq8s8B9ZvJvBsdDUu4wVgDU/edit?usp=sharing)
-pero es indudable que utilizar un depurador es la mejor opción en cuanto el programa que se pretende depurar
-tiene una cierta entidad.
-
 La depuración es una de las tareas más importantes a la hora de programar. 
 Saber cómo utilizar un depurador para establecer puntos de interrupción, cómo pasar por encima y entrar en las funciones 
 que se están utilizando ahorra horas de desarrollo. 
@@ -102,7 +96,7 @@ Se reproducen a continuación algunos consejos extraídos del
 de la asignatura, orientados a evitar los errores de programación.
 Se trata de una lista incompleta pero que puede ser de gran valor:
 * Siga siempre las
-[*Buenas prácticas*](https://docs.google.com/presentation/d/1pj0YVWwOhWI0CGj2wjsHAebnFxfVtowRcFTOdBiloSc/edit?usp=sharing)
+[*Buenas prácticas*](https://docs.google.com/presentation/d/1_rVo2CMVFBrXcPbu2_LfRwQCGQMUe7wk2Bh6BAcDpdc/edit?usp=drive_link)
 de programación.
 Todas esas prácticas están pensadas para minimizar el número de potenciales errores.
 * No deje que sus funciones sean demasiado largas (aproximadamente las líneas que caben en una pantalla, a lo sumo)
@@ -156,10 +150,6 @@ A partir de este punto se propone que utilice *siempre* el depurador para identi
 programas que desarrolle.
 
 ### Material de estudio complementario
-Comience por estudiar el material contenido en las transparencias
-[Debugging your source code](https://docs.google.com/presentation/d/1-vU5UF1ruhHWMp-lJsoYsq8s8B9ZvJvBsdDUu4wVgDU/edit?usp=sharing)
-que puede encontrar en el aula virtual de la asignatura.
-
 Estudie del
 [tutorial de referencia](https://www.learncpp.com/)
 en la asignatura todos los apartados del capítulo 3 (teniendo en cuenta las especificidades de VSC).
